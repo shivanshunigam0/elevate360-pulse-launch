@@ -254,10 +254,10 @@ const Showcase = () => {
 
                         {/* Results Grid */}
                         <div className="grid grid-cols-3 gap-4 mb-6">
-                          {Object.entries(project.results).map(([key, value]) => (
+                           {Object.entries(project.results).map(([key, value]) => (
                             <div key={key} className="text-center p-3 bg-background/30 rounded-lg">
                               <div className="text-lg font-bold text-gradient">
-                                {value}
+                                {value as string}
                               </div>
                               <div className="text-xs text-muted-foreground capitalize">
                                 {key}
