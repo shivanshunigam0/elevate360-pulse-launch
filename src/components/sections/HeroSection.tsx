@@ -89,6 +89,7 @@ export function HeroSection() {
             variant="outline"
             size="lg"
             className="magnetic-hover glass border-white/20 hover:border-white/40 text-lg px-8 py-6 rounded-xl"
+            onClick={() => window.location.href = '/showcase'}
           >
             <Play className="w-5 h-5 mr-2" />
             See Live Results

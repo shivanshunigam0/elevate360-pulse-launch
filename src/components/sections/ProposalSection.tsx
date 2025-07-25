@@ -58,10 +58,19 @@ export function ProposalSection() {
               </div>
 
               <div className="space-y-2">
-                <Input
-                  placeholder="Company/Industry"
-                  className="bg-background/50 border-white/20 h-14 text-lg"
-                />
+                <select className="w-full bg-background/50 border border-white/20 h-14 text-lg rounded-md px-3 text-foreground">
+                  <option value="" disabled selected>Company/Industry</option>
+                  <option value="automotive">Automotive Business</option>
+                  <option value="distribution">Distribution</option>
+                  <option value="dealership">Dealership</option>
+                  <option value="workshops">Workshops</option>
+                  <option value="retail">Retail & FMCG</option>
+                  <option value="realestate">Real Estate</option>
+                  <option value="education">Education</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="hospitality">Hospitality</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
               
               <div className="md:col-span-2 space-y-2">
@@ -78,11 +87,12 @@ export function ProposalSection() {
                 </div>
                 
                 <Button
-                  type="submit"
+                  type="button"
                   size="lg"
                   className="magnetic-hover pulse-glow bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-none text-lg px-12 py-6 rounded-xl"
+                  onClick={() => window.location.href = '/proposal'}
                 >
-                  SUBMIT
+                  GET FREE PROPOSAL
                 </Button>
               </div>
             </form>

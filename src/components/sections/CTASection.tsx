@@ -28,6 +28,7 @@ export function CTASection() {
             <Button
               size="lg" 
               className="magnetic-hover pulse-glow bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-none text-lg px-8 py-6 rounded-xl"
+              onClick={() => window.location.href = '/contact'}
             >
               <Phone className="w-5 h-5 mr-2" />
               Call Now: +91 9876543210
@@ -38,6 +39,7 @@ export function CTASection() {
               variant="outline"
               size="lg"
               className="magnetic-hover glass border-white/20 hover:border-white/40 text-lg px-8 py-6 rounded-xl"
+              onClick={() => window.location.href = '/proposal'}
             >
               <Calendar className="w-5 h-5 mr-2" />
               Book Free Consultation
