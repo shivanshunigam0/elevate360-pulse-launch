@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ThemeToggle } from "@/components/ThemeToggle"
+import { ThemeSelector } from "@/components/ThemeSelector"
 import { Button } from "@/components/ui/button"
 import { Phone, ChevronDown } from "lucide-react"
 import { Link } from "react-router-dom"
@@ -198,7 +198,7 @@ export function Header() {
           </div>
           
           <div className="flex items-center gap-4">
-            <ThemeToggle />
+            <ThemeSelector />
             <Button
               size="sm"
               className="magnetic-hover bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-none shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
